@@ -21,7 +21,9 @@ Minhas congfigurações no VS Code
         "python": "cls ; python -u",
     },
     "code-runner.ignoreSelection": true,
-    "workbench.colorTheme": "OM Theme (Default Dracula Italic)"
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "python" //para executar em ambiente virtual
 }
 
 Usando o tema "OM Theme"
