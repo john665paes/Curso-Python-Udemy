@@ -1,0 +1,12 @@
+# FUNÇÃO PRINT
+
+# ESSA FUNÇÃO DENTRO DO PRINT (sep='') SERVE PARA USAR COMO SEPARADO
+# DOS ARGUMENTO USANDOS NO PRINT
+print(12, 34, sep='APRENDE PORRA')
+print(56, 78, sep="_")
+
+# A FUNÇÃO (and='') SERVE PARA DIZER O QUE VAI NO FINAL DA LINHA 
+# COMO QUEBRA DE LINHA (\n )OU ALGUMA INFORMAÇÃO
+
+print(12, 34, sep='APRENDE PORRA', end=" sdfsdf, \n")
+print(56, 78, sep="_", end=' guabiroba')
