@@ -10,7 +10,8 @@ Obs: Com try/except consigo capturar um erro na exceção
 num_str = input("Informe um numero, vou dobrar esse valor: ")
 # '.isdigit' chega se o usuário digitrou apenas numeros
 print(num_str.isdigit())
-print('O ".isdigit" identificou erro, não possui apenas numeros')
+if (num_str.isdigit()== False):
+    print('O ".isdigit" identificou erro, não possui apenas numeros')
 
 # try e except
 # testo meu verificador de numero e se foi digitado
