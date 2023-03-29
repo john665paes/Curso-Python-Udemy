@@ -6,8 +6,8 @@ inteiro, informe que não é um número inteiro.
 numero = input('Digite um numero inteiro: ')
 
 if (numero.isdigit()):
-    print(numero)
-
+    par = int(numero)%2
+    print(par)
 
 
 

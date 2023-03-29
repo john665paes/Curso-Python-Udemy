@@ -13,7 +13,8 @@ is e is not = é ou não é (tipo, valor, identidade)
 id = Identidade
 """
 condicao = True
-# V ariavel sem valor
+
+# Variavel sem valor
 passou_if = None # Usando para saber se a variavel tem ou não um valor
 
 if condicao:
