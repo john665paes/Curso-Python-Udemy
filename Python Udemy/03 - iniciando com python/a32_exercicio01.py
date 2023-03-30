@@ -6,8 +6,13 @@ inteiro, informe que não é um número inteiro.
 numero = input('Digite um numero inteiro: ')
 
 if (numero.isdigit()):
-    par = int(numero)%2
-    print(par)
+    if (int(numero))%2==0:
+        print(f'O numero {numero} é par!')
+    else:
+        print(f'O numero {numero} é impar!')
+else:
+    print(f'VocÊ digitou ({numero}), não é um numero inteiro!')
+
 
 
 
