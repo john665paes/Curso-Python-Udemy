@@ -7,9 +7,12 @@ Executa uma ação enquanto uma condição for verdadeira
 condicao = True
 
 while condicao:
-    print(1)
-    print(2)
-    print(3)
-    valor = input("True or False")
-    if valor == False:
+#    Repete a coindição até sert verdadeira
+    valor = input('Sair ou continuar: ')
+    print(f'Voce digitou {valor}')
+    
+    if valor == 'sair':
+#   Para a execução quando encontra o break
         break
+    
+print('saiu!!!')
