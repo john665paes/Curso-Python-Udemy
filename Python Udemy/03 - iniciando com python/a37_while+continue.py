@@ -12,10 +12,10 @@ while cont <20:
 
     if cont == 7:
         print("não vou mostrar 7")
-        continue
-    
+        continue # O continue pula para a proxima repetição e volta para o inicio do while
+
     print(cont)
     
     if cont == 15:
-        break
-print('Já contei desgraça!')
+        break #O break quebra o laço de repetição
+print('Contei até ', cont)
