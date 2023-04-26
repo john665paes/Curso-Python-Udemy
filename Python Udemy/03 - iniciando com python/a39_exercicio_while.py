@@ -13,6 +13,8 @@ while cont < int(nomeTam):
         # Essa parte fiz para testar como seria a impresão 
         # print(cont)
         # print(nome[cont], cont)
+        
+        # AQUI SERÁ INSERIDO A ITERAÇÃO NA NOVA VARIAVEL MAIS UMA '*'
         novo_nome += nome[cont] + '*'
         cont +=1
 
