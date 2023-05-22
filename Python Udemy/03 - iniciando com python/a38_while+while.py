@@ -1,6 +1,6 @@
 """
 Laços Internos
-while (enquanto)
+while (enquanto) dentro de while
 Executa uma ação enquanto uma condição for verdadeira
 Loop infinito -> O cod nunca tem fim
 
