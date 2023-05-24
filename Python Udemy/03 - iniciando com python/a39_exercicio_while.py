@@ -3,7 +3,7 @@ Iterando strings com while
 
 *ITERAVEL - Um objeto capaz de retornar seus membros um de cada vez.
 """
-nome = 'Johnatan Paes'
+nome = 'Johnatan Paes vai ser um puta programador'
 
 nomeTam = len(nome)
 print(nome)
