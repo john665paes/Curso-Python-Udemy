@@ -7,7 +7,7 @@ while True:
     n1 = float(input("Informe um numero para caucular: "))
     n2 = float(input("Informe outro numero para caucular: "))
     print("\nOperdores: + - * / ")
-    op = input("Informe informe um operador: ")
+    op = input("Informe um operador: ")
 #   Esse é o cod do professor:
     numValidos = None
 
@@ -29,6 +29,7 @@ while True:
             print('Um ou ambos os numeros digitados não são validos')
             continue
 
+#   Tambem fiz essa parte
     condParar = input('Deseja calcular outro valor? [S/N]: ').lower().startswith('n')
     # a função lower() converte qualquer string para minuscula
     # a função startswith() verifica a primeira letra da str e retorna um bool
