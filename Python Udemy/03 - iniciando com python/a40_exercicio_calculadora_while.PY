@@ -4,14 +4,17 @@ Calculadora com While
 print("*****Calculadora*****\n" )
 
 while True:
-    n1 = float(input("Informe um numero para caucular: "))
-    n2 = float(input("Informe outro numero para caucular: "))
+    n1 = input("Informe um numero para caucular: ")
+    n2 = input("Informe outro numero para caucular: ")
     print("\nOperdores: + - * / ")
     op = input("Informe um operador: ")
 #   Esse é o cod do professor:
     numValidos = None
 
     try:
+        # informei dentro do TRY o tipo de conversão para a verificação poder ser validada
+        n1 =  float(n1)
+        n2 =  float(n2)
         numValidos = True
         if op == '+':
             print(f'{n1} + {n2} = ', n1+n2)
@@ -25,9 +28,18 @@ while True:
     except:
         numValidos = None
 
-        if numValidos == None:
-            print('Um ou ambos os numeros digitados não são validos')
-            continue
+    if numValidos == None:
+        print('Um ou ambos os numeros digitados não são validos')
+        continue
+
+    op_permitido = '+-*/'
+
+    if op not in op_permitido:
+        print('o operador não é válido')
+        continue
+    if len(op) > 1:
+        print('Digite apenas um operador')
+        continue
 
 #   Tambem fiz essa parte
     condParar = input('Deseja calcular outro valor? [S/N]: ').lower().startswith('n')
