@@ -4,27 +4,21 @@ Calculadora com While
 print("*****Calculadora*****\n" )
 
 while True:
-    n1 = input("Informe um numero para caucular: ")
-    n2 = input("Informe outro numero para caucular: ")
+    num1 = input("Informe um numero para caucular: ")
+    num2 = input("Informe outro numero para caucular: ")
     print("\nOperdores: + - * / ")
     op = input("Informe um operador: ")
 #   Esse é o cod do professor:
     numValidos = None
-
+    n1 = 0
+    n2 = 0
+    # AGORA TEM TODA UMA VALIDAÇÃO DOS DADOS SOLICITADOS
+    # SO APÓS VALIDAR O CAUCULO SERÁ FEITO
     try:
         # informei dentro do TRY o tipo de conversão para a verificação poder ser validada
-        n1 =  float(n1)
-        n2 =  float(n2)
+        n1 =  float(num1)
+        n2 =  float(num2)
         numValidos = True
-        if op == '+':
-            print(f'{n1} + {n2} = ', n1+n2)
-        elif op == '-':
-            print(f'{n1} - {n2} = ', n1-n2)
-        elif op == '*':
-            print(f'{n1} * {n2} = ', n1*n2)
-        elif op == '/':
-            print(f'{n1} / {n2} = ', n1/n2)
-
     except:
         numValidos = None
 
@@ -40,6 +34,17 @@ while True:
     if len(op) > 1:
         print('Digite apenas um operador')
         continue
+    
+    # AQUI COMEÇA O CAULCULO
+    print('Cauculando...')
+    if op == '+':
+        print(f'{n1} + {n2} = ', n1+n2)
+    elif op == '-':
+        print(f'{n1} - {n2} = ', n1-n2)
+    elif op == '*':
+        print(f'{n1} * {n2} = ', n1*n2)
+    elif op == '/':
+        print(f'{n1} / {n2} = ', n1/n2)
 
 #   Tambem fiz essa parte
     condParar = input('Deseja calcular outro valor? [S/N]: ').lower().startswith('n')
@@ -52,14 +57,4 @@ while True:
 
 print(' \nCalculadora encerrada')
 
-
-#   esse foi o meu cód
-""" if op == '+':
-print(f'{n1} + {n2} = ', n1+n2)
-elif op == '-':
-print(f'{n1} - {n2} = ', n1-n2)
-elif op == '*':
-print(f'{n1} * {n2} = ', n1*n2)
-elif op == '/':
-print(f'{n1} / {n2} = ', n1/n2)"""
 
