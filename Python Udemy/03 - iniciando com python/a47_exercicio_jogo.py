@@ -5,33 +5,64 @@ Faça um jogo para o usuário adivinhar qual a palavra secreta.
         - se a letra digitada estiver na palavra secreta, exiba na tela;
         se a letra digitada não estiver na palavra secreta, exiba '*'.
 - Faça uma contagem de tentativas do seu usuário
+
 """
+import os
+
 repeticao = 0
 palavra_secreta = 'programador'
-achou_palavra = ''
+letras_acertadas = ''
+
 # palavra = ''
 print('*****Descubra a palavra secreta*****')
 
 while True:
-    letra = input(f'Digite uma letra: ({repeticao}x) ')
+    letra = input(f'Digite uma letra: ')
     repeticao+=1
 
-    if letra.isdigit() == True:
-         print('Não é uma letra, digite novamente!')
+    if letra.isdigit():         
+        print('Não é uma letra, digite novamente!')
+        continue
+    
+    if len(letra)>1:
+         print('Digite apenas uma letra!')
          continue
+     
     if letra in palavra_secreta:
-        print(f'A palavra secreta possui a letra {letra}')
-        achou_palavra += letra    
+        letras_acertadas +=letra
+
+    palavra_formada= ''
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
+        else:
+            palavra_formada += '*'
+
+    print(palavra_formada)
+
+    if palavra_formada == palavra_secreta:
+        os.system('cls')
+        print("Parabens você acertou a Palavra: ", palavra_secreta)
+        print(f'Usando {repeticao} tentativas')
+        break
+
+
+
+
+
+    #     print(palavra_secreta[i])    
+
+    #     print(f'Palavra secreta possui a letra {letra}')
             
 
-    elif letra not in palavra_secreta:
-            print(f'A palavra secreta não possui a letra {letra}')
+    # elif letra not in palavra_secreta:
+    #         print(f'A palavra secreta não possui a letra {letra}')
 
-    print(achou_palavra)
+    # print(achou_palavra)
     
-    elif achou_palavra == palavra_secreta:
-        print(f'A palavra secreta é: {palavra_secreta}')
-        print(f'Voce tentou {repeticao}x para acertar')
+    # elif achou_palavra == palavra_secreta:
+    #     print(f'A palavra secreta é: {palavra_secreta}')
+    #     print(f'Voce tentou {repeticao}x para acertar')
 
 
 
