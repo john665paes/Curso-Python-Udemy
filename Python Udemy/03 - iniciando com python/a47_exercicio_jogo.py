@@ -31,6 +31,9 @@ while True:
     if letra in palavra_secreta:
         letras_acertadas +=letra
 
+# fiz um for na palavra secreta
+# se a letra estiver na palavra secreta sera exibida
+# senão, exibira um '*'
     palavra_formada= ''
     for letra_secreta in palavra_secreta:
         if letra_secreta in letras_acertadas:
