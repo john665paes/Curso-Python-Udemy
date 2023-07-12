@@ -20,14 +20,14 @@ while True:
     letra = input(f'Digite uma letra: ')
     repeticao+=1
 
-    if letra.isdigit():         
+    if letra.isdigit():
         print('Não é uma letra, digite novamente!')
         continue
-    
+
     if len(letra)>1:
          print('Digite apenas uma letra!')
          continue
-     
+
     if letra in palavra_secreta:
         letras_acertadas +=letra
 

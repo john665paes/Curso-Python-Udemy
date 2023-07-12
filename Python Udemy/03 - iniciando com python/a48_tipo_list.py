@@ -1,12 +1,12 @@
 """
 Listas em Python
-Tipo list - Mutável(pode ser mudado o valor o indice que quiser)
+Tipo list - Mutável(pode ser mudado o valor no indice que quiser)
 Suporta vários valores de qualquer tipo
 Conhecimentos reutilizáveis - índices e fatiamento
 Métodos úteis: append, insert, pop, del, clear, extend, +
 """
 #         01234
-#        -54321  
+#        -54321
 string = 'ABCDE' # 5  caracteres
 lista = ["jOhn", True, 1992, 1.4]
 print(lista)
