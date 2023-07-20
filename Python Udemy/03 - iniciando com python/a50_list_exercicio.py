@@ -10,3 +10,5 @@ indices = range(len(lista))
 for indice in indices:
     print(indice, lista[indice], type(lista[indice]))
     # cont+= 1
+lista.append("toin")
+print(lista)
