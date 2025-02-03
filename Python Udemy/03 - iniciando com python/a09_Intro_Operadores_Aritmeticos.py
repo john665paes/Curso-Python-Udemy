@@ -5,7 +5,7 @@ adicao = 10+2
 print("adição: ",adicao)
 
 subtracao = 10-2
-print("subitração: ",subtracao)
+print("subtração: ",subtracao)
 
 multiplicacao = 10*2
 print("Mutiplicação: ", multiplicacao)
