@@ -9,7 +9,10 @@
 # print(string.upper())
 # print(isinstance(string, str))
 
+#Metodo __init__()
+
 class   Pessoa:
+    #o Self representa o proprio objeto
     def __init__(self, nome, sobrenome, idade):
         self.nome = nome
         self.sobrenome = sobrenome
