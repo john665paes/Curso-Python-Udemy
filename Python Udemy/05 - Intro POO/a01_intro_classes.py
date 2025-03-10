@@ -5,14 +5,15 @@
 # internos para realizar várias ações.
 # Por convenção, usamos PascalCase para nomes de
 # classes.
-# string = 'Luiz'  # str
+# string = 'Johnatan, esforçando ao maximo'  # str
 # print(string.upper())
 # print(isinstance(string, str))
 
 #Metodo __init__()
 
 class   Pessoa:
-    #o Self representa o proprio objeto
+    #o Self referencia ao objeto que está sendo criado.
+    # o metodo __init__() e chamado sempre que uma nova instancia da classe é criada
     def __init__(self, nome, sobrenome, idade):
         self.nome = nome
         self.sobrenome = sobrenome
